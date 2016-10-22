@@ -1,4 +1,5 @@
 bin/
-obj/
+ojb/
+*.layout
 *.depend
-#**.o*
+**.o*
