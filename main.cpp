@@ -4,9 +4,9 @@
 
 extern "C" {
 
-    DLL_EXPORT EngineControl* BuildEngineControl()
+    DLL_EXPORT EngineControl* Build()
 		{
-			return (EngineControl*)(new LoadingScreen());
+			return new LoadingScreen();
 		}
     }
 

@@ -23,7 +23,7 @@ extern "C"
 {
 #endif
 
-    DLL_EXPORT EngineControl* BuildEngineControl();
+    DLL_EXPORT EngineControl* Build();
 
 #ifdef __cplusplus
 }
