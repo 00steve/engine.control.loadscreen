@@ -11,6 +11,11 @@
 class LoadingScreen : public EngineControl {
 private:
     Camera* camera;
+
+protected:
+
+    virtual void OnSetSettings();
+	virtual void OnGlobalRequest(Node* globalNodeRef,string name);
 public:
 
     LoadingScreen();
@@ -19,8 +24,8 @@ public:
 	void Draw();
 	void Update();
 
-	void OnSetSettings();
-	void OnGlobalRequest(Node* globalNodeRef,string name);
+	//void OnSetSettings();
+	//void OnGlobalRequest(Node* globalNodeRef,string name);
 };
 
 

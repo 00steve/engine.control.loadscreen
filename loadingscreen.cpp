@@ -96,16 +96,15 @@ void LoadingScreen::Draw(){
 			glVertex3d(d.x*-.5,d.y*.5,d.z*.5);
             glColor3f(d.x*-1,d.y,d.z*-1);
 			glVertex3d(d.x*-.5,d.y*.5,d.z*-.5);
-
 		glEnd();
-
     //glPopMatrix();
-
 }
 
 
 void LoadingScreen::OnSetSettings(){
+
     if(Settings().IsSet("camera")){
+        cout << " - want camera : " << Settings().get<string>("camera") << endl;
         GlobalRequest(Settings().get<string>("camera"));
     }
 }
