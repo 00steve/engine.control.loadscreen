@@ -3,7 +3,6 @@
 
 
 LoadingScreen::LoadingScreen(){
-    cout << "CREATE NEW LOADING SCREEN\n";
 }
 
 LoadingScreen::~LoadingScreen(){
