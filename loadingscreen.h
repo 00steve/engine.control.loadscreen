@@ -23,9 +23,6 @@ public:
 
 	void Draw();
 	void Update();
-
-	//void OnSetSettings();
-	//void OnGlobalRequest(Node* globalNodeRef,string name);
 };
 
 
