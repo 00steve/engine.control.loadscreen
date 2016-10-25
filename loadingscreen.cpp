@@ -23,7 +23,6 @@ void LoadingScreen::Draw(){
     glVertex3f(0,0,0);
     glVertex3f(0,-1,0);
     glEnd();
-
     //glPushMatrix();
         /*
         glMatrixMode(GL_PROJECTION);
