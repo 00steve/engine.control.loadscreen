@@ -34,21 +34,7 @@ void LoadingScreen::Draw(){
 
 
         */
-		/*
-            glMatrixMode(GL_PROJECTION);
-            glLoadIdentity();
-            gluPerspective( 65, 1.33, 1, 25 );
-            gluLookAt(0, 							//cameara position x
-					0, 								//cameara position y
-					3, 								//cameara position z
-					0,		//look position x
-					0,  				//look position y
-					0,  	//look position z
-					0,				//up angle x
-					1,							//up angle y
-					0);			//up angle z
-        glRotated(45,1,0,0);
-        glRotated(rotation,0,1,0);*/
+
 
 
         double3 d = double3(1,1,1);
@@ -102,7 +88,7 @@ void LoadingScreen::Draw(){
 
 
 void LoadingScreen::OnSetSettings(){
-
+    cout << "LoadingScreen::OnSetSettings\n";
     if(Settings().IsSet("camera")){
         cout << " - want camera : " << Settings().get<string>("camera") << endl;
         GlobalRequest(Settings().get<string>("camera"));
